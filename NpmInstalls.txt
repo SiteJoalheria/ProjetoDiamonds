@@ -1,0 +1,5 @@
+npm install sql
+npm install --save sequelize
+npm install --save mysql2
+npm install --save express-handlebars
+npm install express
