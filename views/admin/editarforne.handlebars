@@ -1,0 +1,51 @@
+
+<main class="mainFormulario">
+    <div class="containerformAP">
+        <h1>Editar Fornecedor</h1>
+            <form class="formAP" action="/admin/editarforne/{{fornecedor.id}}" method="post">
+            <div class="contentAP">
+                <div class="input-boxAP">
+                    <label for="razaoSocial" class="labelAP">Razão Social:</label>
+                    <input type="text" name="razaoSocial" value="{{fornecedor.razaoSocial}}"required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="nome" class="labelAP">Nome Fantasia:</label>
+                    <input type="text" name="nomeFantasia" value="{{fornecedor.nomeFantasia}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="cnpj" class="labelAP">CNPJ:</label>
+                    <input type="text" name="cnpj" maxlength="18" value="{{fornecedor.cnpj}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="email" class="labelAP">Email:</label>
+                    <input type="text" name="email" value="{{fornecedor.email}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="telefone" class="labelAP">Telefone:</label>
+                    <input type="tel" name="telefone" maxlength="11" value="{{fornecedor.telefone}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="endereco" class="labelAP">Endereço:</label>
+                    <input type="text" name="endereco" value="{{fornecedor.endereco}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="cep" class="labelAP">Cep:</label>
+                    <input type="text" name="cep" value="{{fornecedor.cep}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="cidade" class="labelAP">Cidade:</label>
+                    <input type="text" name="cidade" value="{{fornecedor.cidade}}" required>
+                </div>
+            </div>
+            <div class="btns">
+                <button type="button" onclick="voltarPagina()" class="btn-confirmAP">Voltar</button>
+                <input type="submit" value="Enviar" class="btn-confirmAP">
+            </div>
+        </form>
+        </div>
+    </div>
+</main>
+
+<script src="/public/Scripts/SwalMixin.js"></script>
+
+

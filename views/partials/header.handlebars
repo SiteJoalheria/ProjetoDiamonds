@@ -1,30 +1,40 @@
 <!-- Header -->
-<header>
+<header {{#if isMenuPage}}class="menu-page-header"{{/if}}>
     <!-- Nav | Area de navegação -->
     <nav class="nav containerHeader">
         <div class="nav-start">
             <a href="/" class="logo navItem"> <img src="/icons/WhiteHeader/diamond.png" class="img-icon" id=""> </a>
         </div>
-        <ul class="navUl">
-            <li class="">
-                <a href="#Aliancas" class="logo navItem">Alianças  <img src="/icons/WhiteHeader/diamond-ring.png" class="img-icon"></a> 
-            </li>
-            <li class="">
-                <a href="#Pingentes" class="logo navItem">Pingentes <img src="/icons/WhiteHeader/necklace.png" class="img-icon"></i></a>
-            </li>
-            <li class="">
-                <a href="#Pulseiras" class="logo navItem">Pulseiras <img src="/icons/WhiteHeader/bracelet.png" class="img-icon"></i></a>
-            </li>
-            <li class="">
-                <a href="#Brincos" class="logo navItem">Brincos <img src="/icons/WhiteHeader/earrings.png" class="img-icon"></i></a>
-            </li>
-            <li class="">
-                    <a href="#Piercing" class="logo navItem">Piercing  <img src="/icons/WhiteHeader/piercings.png" class="img-icon"></a> 
-            </li>
-        </ul>
+        {{#if mostrarElementoEspecifico}}
+        <div class="navMid">
+            <ul class="navUl">
+                <li class="itemPintado">
+                    <a href="#Aliancas" class="logo navItem">Alianças  <img src="/icons/WhiteHeader/diamond-ring.png" class="img-icon "></a> 
+                </li>
+                <li class="itemPintado">
+                    <a href="#Pingentes" class="logo navItem">Pingentes <img src="/icons/WhiteHeader/necklace.png" class="img-icon "></i></a>
+                </li>
+                <li class="itemPintado">
+                    <a href="#Pulseiras" class="logo navItem">Pulseiras <img src="/icons/WhiteHeader/bracelet.png" class="img-icon "></i></a>
+                </li>
+                <li class="itemPintado">
+                    <a href="#Brincos" class="logo navItem">Brincos <img src="/icons/WhiteHeader/earrings.png" class="img-icon "></i></a>
+                </li>
+                <li class="itemPintado">
+                        <a href="#Piercing" class="logo navItem">Piercing  <img src="/icons/WhiteHeader/piercings.png" class="img-icon "></a> 
+                </li>
+            </ul>
+        </div>
+        {{/if}}
+
         <div class="nav-end">
-            <a class="logo navItem"><img src="/icons/WhiteHeader/shopping-bag.png" class="img-icon" id="cart-icon"> </a>
-            <a class="logo navItem" href="/login"><img src="/icons/WhiteHeader/whiteperfil.png" class="img-icon" id="cart-icon"> </a>
+            <div class="perfil">
+                <label class="nomeUsuario">Usuário: <span id="nomeUsuarioHeader"></span></label>
+                <a class="icons-end" href="/logout">Sair</a>
+            </div>
+            <a class="icons-end"><img src="/icons/WhiteHeader/shopping-bag.png"  id="cart-icon"> </a>
+            <a class="icons-end" href="/perfil"><img src="/icons/WhiteHeader/whiteperfil.png"  id="cart-icon"> </a>
+            <a class="icons-end" href="/admin/menuadmin"><img src="/icons/WhiteHeader/whiteadmin.png"  id="cart-icon"> </a>
         </div>
 
         <!-- Carrinho de compras -->
@@ -41,8 +51,7 @@
             </div>
 
             <!-- Buy button -->
-            <button type="button" class="btn-buy"><a href="pedido.html">COMPRAR</a></button>
-
+            <button type="button" class="btn-buy" onclick="redirectToPedido()">COMPRAR</button>
             <!-- FECHAR CARRINHO DE COMPRAS -->
             <i class='bx bx-x' id="close-cart"></i>        
         </nav>

@@ -1,0 +1,56 @@
+<main class="mainFormulario">
+    <div class="containerformAP">
+        <h1>Editar Produto</h1>
+            <form class="formAP" action="/admin/editarprod/{{produto.id}}" method="post" enctype="multipart/form-data">
+            <div class="contentAP">
+                <div class="input-boxAP">
+                    <label for="nome-produto" class="labelAP">Nome do Produto:</label>
+                    <input type="text" id="nome-produto" name="nome" value="{{produtos.nome}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="preco" class="labelAP">Preço:</label>
+                    <input type="number" id="preco" name="preco" value="{{produtos.preco}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="fornecedor" class="labelAP">Fornecedor:</label>
+                        <select name="fornecedor" id="fornecedor" required>
+                            {{#each fornecedores}}
+                                <option value="{{nomeFantasia}}"{{#isEqual produtos.nomeForne "{{nomeFantasia}}"}}selected{{/isEqual}}>{{nomeFantasia}}</option>
+                            {{/each}}
+                        </select>
+                </div>
+                <div class="input-boxAP">
+                    <label for="quantidade" class="labelAP">Quantidade em Estoque:</label>
+                    <input type="number" id="quantidade" name="quantidade" step="1" value="{{produtos.quantidade}}" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="imagem" class="labelAP">Imagem atual:</label>
+                    <img src="{{ produtos.imagem }}" alt="Imagem atual do produto" class="img-formprod">
+                </div>
+
+                <div class="input-boxAP">
+                    <label for="novaImagem" class="labelAP">Nova imagem:</label>
+                    <input type="file" name="imagem" accept="image/*">
+                </div>
+                <div class="input-boxAP">
+                    <label for="categoria" class="labelAP">Categoria:</label>
+                    <select name="categoria" class="selectAP">
+                        <option value="aliança" {{#isEqual produtos.categoria "aliança"}}selected{{/isEqual}}>Aliança</option>
+                        <option value="pingente" {{#isEqual produtos.categoria "pingente"}}selected{{/isEqual}}>Pingente</option>
+                        <option value="pulseira" {{#isEqual produtos.categoria "pulseira"}}selected{{/isEqual}}>Pulseira</option>
+                        <option value="brinco" {{#isEqual produtos.categoria "brinco"}}selected{{/isEqual}}>Brinco</option>
+                        <option value="piercing" {{#isEqual produtos.categoria "piercing"}}selected{{/isEqual}}>Piercing</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btns">
+                <button type="button" onclick="voltarPagina()" class="btn-confirmAP">Voltar</button>
+                <input type="submit" value="Enviar" class="btn-confirmAP">
+            </div>
+        </form>
+        </div>
+    </div>
+</main>
+
+
+

@@ -1,0 +1,51 @@
+<main class="mainFormulario">
+            
+    <div class="containerformAP">
+        <h1 class="titleForms">Cadastro de Fornecedor</h1>
+            <form class="formAP" action="/admin/adicionarforne/add" method="post">
+            <div class="contentAP">
+                <div class="input-boxAP">
+                    <label for="razaoSocial" class="labelAP">Razão Social:</label>
+                    <input type="text" name="razaoSocial" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="nome" class="labelAP">Nome Fantasia:</label>
+                    <input type="text" name="nomeFantasia" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="cnpj" class="labelAP">CNPJ:</label>
+                    <input type="text" name="cnpj" maxlength="18" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="email" class="labelAP">Email:</label>
+                    <input type="text" name="email" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="telefone" class="labelAP">Telefone:</label>
+                    <input type="tel" name="telefone" maxlength="15" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="endereco" class="labelAP">Endereço:</label>
+                    <input type="text" name="endereco" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="cep" class="labelAP">Cep:</label>
+                    <input type="text" name="cep" maxlength="9" required>
+                </div>
+                <div class="input-boxAP">
+                    <label for="cidade" class="labelAP">Cidade:</label>
+                    <input type="text" name="cidade" required>
+                </div>
+            </div>
+            <div class="btns">
+                <button type="button" onclick="voltarPagina()" class="btn-confirmAP">Voltar</button>
+                <button type="submit" class="btn-confirmAP" class="btn-confirmAP">Confirmar</button>
+            </div>
+        </form>
+        
+        </div>
+    </div>
+</main>
+
+
+

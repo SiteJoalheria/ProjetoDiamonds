@@ -1,0 +1,17 @@
+.containerMenu {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.ADM_MENU_btn {
+    height: 45px;
+    width: 90px;
+    border: none;
+    color: white;
+    background-color: #090B1C;
+    cursor: pointer;
+}

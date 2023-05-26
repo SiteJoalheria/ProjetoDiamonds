@@ -31,7 +31,8 @@
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: rgb(9,11,28);
+  background: linear-gradient(270deg, rgba(9,11,28,1) 0%, rgba(2,168,201,1) 100%);
 }
 
 .contentL form .user-detailsL{
@@ -66,12 +67,7 @@ form .input-boxL span.detailsL{
 
   .user-detailsL .input-boxL input:focus,
   .user-detailsL .input-boxL input:valid{
-  border-color: #9b59b6;
-}
-
-form .gender-detailsL .gender-titleL{
-  font-size: 20px;
-  font-weight: 500;
+  border-color: #02a7c8;
 }
 
 form .buttonL{
@@ -90,12 +86,14 @@ form .buttonL input{
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: rgb(9,11,28);
+  background: linear-gradient(270deg, rgba(9,11,28,1) 0%, rgba(2,168,201,1) 100%);
 }
 
 form .buttonL input:hover{
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  background: rgb(9,11,28);
+  background: linear-gradient(-270deg, rgba(9,11,28,1) 0%, rgba(2,168,201,1) 100%);
 }
 
 /* @media(max-width: 584px){
