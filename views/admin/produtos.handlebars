@@ -1,0 +1,37 @@
+<main class="mainForn">
+    <div class="titleH">
+        <h2>Lista de produtos</h2>
+    </div>
+    <div class="containerForn">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Nome fornecedor</th>
+                    <th>Quantidade</th>
+                    <th>Imagem</th>
+                    <th>Categoria</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each produtos}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{nome}}</td>
+                    <td>{{preco}}</td>
+                    <td>{{nomeForne}}</td>
+                    <td>{{quantidade}}</td>
+                    <td><img src="{{imagem}}" alt="Imagem do Produto" class="IMG-PROD"></td>
+                    <td>{{categoria}}</td>
+                    <td><a href="/admin/editarprod/{{id}}" >Editar</a></td>
+                    <td><a href="/admin/excluirprod/{{id}}" >Excluir</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</main>

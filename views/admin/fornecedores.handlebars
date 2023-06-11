@@ -1,0 +1,41 @@
+<main class="mainForn">
+    <div class="titleH">
+        <h2>Lista de fornecedores</h2>
+    </div>
+    <div class="containerForn">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Razão Social</th>
+                    <th>Nome Fantasia</th>
+                    <th>CNPJ</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                    <th>CEP</th>
+                    <th>Cidade</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each fornecedores}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td class="td-limite">{{razaoSocial}}</td>
+                    <td class="td-limite">{{nomeFantasia}}</td>
+                    <td class="td-limite">{{cnpj}}</td>
+                    <td class="td-limite">{{email}}</td>
+                    <td>{{telefone}}</td>
+                    <td class="td-limite">{{endereco}}</td>
+                    <td>{{cep}}</td>
+                    <td>{{cidade}}</td>
+                    <td><a href="/admin/editarforne/{{id}}" >Editar</a></td>
+                    <td><a href="/admin/excluirforne/{{id}}" >Excluir</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</main>

@@ -1,0 +1,20 @@
+//Instação completa para executar e desenvolver
+npm install sql
+npm install --save sequelize
+npm install --save mysql2
+npm install --save express-handlebars
+npm install express
+npm install multer
+npm install jsonwebtoken
+npm install cookie-parser
+npm i passport-local bcryptjs
+
+
+
+
+
+//Comando para reduzir as dependencias do node_modules, retirando os modulos que nao estãos sendo utilizados.
+npm prune
+
+//Instação dos modulos necessarios apenas para executar o programa.(Nao da pra desenvolver nada)
+npm install --production

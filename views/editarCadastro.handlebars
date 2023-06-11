@@ -1,0 +1,51 @@
+<main class="mainL">
+<div class="containerL">
+    <div class="titleL"> Editar Cadastro </div>
+    <div class="contentL">
+        <form action="/editarcliente/{{cliente.id}}" method="POST">
+            <div class="user-detailsL">
+                <div class="input-boxL">
+                    <span class="details">Nome completo:</span>
+                    <input type="text" name="nome" value="{{cliente.nome}}" required>
+                </div>
+                <div class="input-boxL">
+                    <span class="details">CPF: </span>
+                    <input type="text" value="{{cliente.cpf}}" name="cpf"  required maxlength="14" onkeypress="formatar('###.###.###-##', this)">
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Telefone: </span>
+                    <input type="text" value="{{cliente.telefone}}" name="telefone"  required maxlength="13" onkeypress="formatar('## #####-####', this)">
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Cidade</span>
+                    <input type="text" value="{{cliente.cidade}}" name="cidade" required>
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Endereço: </span>
+                    <input type="text" value="{{cliente.endereco}}" name="endereco" required>
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Cep</span>
+                    <input type="text" value="{{cliente.cep}}" name="cep" required maxlength="9" onkeypress="formatar('#####-###', this)">
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Email: </span>
+                    <input type="text" value="{{cliente.email}}" name="email" required>
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Senha: </span>
+                    <input type="text" value="{{cliente.senha}}" name="senha" required>
+                </div>
+            </div>
+            <div class="buttonL">
+                <input type="submit" value="Editar">
+            </div>
+        </form>
+    </div>
+</div>
+</main>
+
+
+
+
+

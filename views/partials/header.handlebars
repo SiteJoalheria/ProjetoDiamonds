@@ -1,0 +1,75 @@
+<!-- Header -->
+<header {{#if isMenuPage}}class="menu-page-header"{{/if}}>
+    <!-- Nav | Area de navegação -->
+    <nav class="nav containerHeader">
+        <div class="nav-start">
+            <a href="/" class="logo navItem"> <img src="/icons/WhiteHeader/diamond.png" class="img-icon-logo" id=""> </a>
+        </div>
+        {{#if MenuPageHeader}}
+            <div class="navMid">
+                <ul class="navUl">
+                    <li class="itemPintado">
+                        <a href="#Aliancas" class="logo navItem">Alianças  <img src="/icons/WhiteHeader/diamond-ring.png" class="img-icon "></a> 
+                    </li>
+                    <li class="itemPintado">
+                        <a href="#Pingentes" class="logo navItem">Pingentes <img src="/icons/WhiteHeader/necklace.png" class="img-icon "></i></a>
+                    </li>
+                    <li class="itemPintado">
+                        <a href="#Pulseiras" class="logo navItem">Pulseiras <img src="/icons/WhiteHeader/bracelet.png" class="img-icon "></i></a>
+                    </li>
+                    <li class="itemPintado">
+                        <a href="#Brincos" class="logo navItem">Brincos <img src="/icons/WhiteHeader/earrings.png" class="img-icon "></i></a>
+                    </li>
+                    <li class="itemPintado">
+                            <a href="#Piercing" class="logo navItem">Piercing  <img src="/icons/WhiteHeader/piercings.png" class="img-icon "></a> 
+                    </li>
+                </ul>
+            </div>
+        {{/if}}
+
+        <div class="nav-end">
+            {{#if logado}}
+            <div class="perfil">
+                <div class="perfilUP">
+                    <label class="nomeUsuario">Olá, <span id="nomeUsuarioHeader"></span></label>
+                </div>
+                <div class="perfilDOWN">
+                    <a href="/perfil"><span class="spanPerfil">MINHA CONTA</span></a>
+                    <span style="color:white;"> | </span>
+                    <a href="/logout"><span class="spanPerfil">SAIR</span></a>
+                </div>
+            </div>
+            {{else}}
+                <div class="perfil">
+                    <div class="perfilUP">
+                        <span class="spanPerfil">Faça <a href="/login">Login</a> ou</span>
+                    </div>
+                    <div class="perfilDOWN">
+                        <span class="spanPerfil">crie seu <a href="/cadastro">Cadastro</a></span>
+                    </div>
+                </div>
+            {{/if}}
+            <a class="icons-end"><img src="/icons/WhiteHeader/shopping-bag.png"  id="cart-icon"> </a>
+            <a class="icons-end" href="/admin/menuadmin"><img src="/icons/WhiteHeader/whiteadmin.png"  id="cart-icon"> </a>
+        </div>
+
+        <!-- Carrinho de compras -->
+        <div class="cart">
+            <h2 class="cart-title">Seu Carrinho</h2>
+            <!-- Conteudo do carrinho de compras -->
+            <div class="cart-content">              
+            </div>
+
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">R$ 0</div>
+            </div>
+
+            <!-- Buy button -->
+            <button type="button" class="btn-buy" onclick="redirectToPedido()">COMPRAR</button>
+            <!-- FECHAR CARRINHO DE COMPRAS -->
+            <i class='bx bx-x' id="close-cart"></i>        
+        </nav>
+</header>
+

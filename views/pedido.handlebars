@@ -1,0 +1,95 @@
+<main class="mainPedido">
+    <div class="containerGrid">
+        <div class="col1">
+            <div class="containerEndereco">
+            <div class="tituloEndereco">
+                
+                <h2 class="h2Center"> <img src="/icons/blueping.png" class="iconsPedido"> SELECIONE O ENDEREÇO</h2>
+            </div>
+            <div class="endereco">
+                <b style="margin: 0 0 10px 15px;">Endereço principal:</b>
+                <p>{{cliente.endereco}}</p>
+                <p>{{cliente.cep}}</p>
+                <p>{{cliente.cidade}}</p>
+            </div>
+            <div class="btns-endereco-container ">
+                    <a><button class="btns-endereco" style="padding: 5px 15px">EDITAR</button></a>
+                    <a><button class="btns-endereco c-blue" style="padding: 5px 15px">NOVO ENDEREÇO</button></a>
+                </div>
+            
+        </div>
+        <div class="containerProduto">
+            <div class="tituloProduto">
+                
+                <h2 class="h2Center"><img src="/icons/bluebasket.png" class="iconsPedido"> PRODUTOS</h2>
+                <button class="btn-remover-tudo">REMOVER TODOS OS PRODUTOS</button>
+            </div>
+            <section class="listaprodutos">
+                {{#each produtos}}
+                    <div class="contentProd">
+                        <div class="prod-img">
+                            <img src="{{this.imagem}}" alt="Imagem do produto">
+                        </div>
+                        <div class="prod-id">
+                            <p id="prod-id">COD: {{this.id}}</p>
+                        </div>
+                        <div class="prod-nome">
+                            <p>{{this.nome}}</p>
+                        </div>
+                        <div class="prod-qtn">
+                            <p>Quant: </p>
+                            <div class="btn-qtn">
+                                <button class="none botoesMenor" onclick="calcularPrecos(this.nextElementSibling)"><img src="/icons/menor.png" class="simbolos-btn"></button>
+                                <input class="quant" value="{{this.quantidade}}"></input>
+                                <button class="none botoesMaior" onclick="calcularPrecos(this.previousElementSibling)"><img src="/icons/maior.png" class="simbolos-btn"></button>
+                            </div>
+                            <button class="prod-qtn-remove "><img src="/icons/redbin.png" style="width:15px; height:15px; margin-right: 5px;"><span style="font-size: 12px; letter-spacing: 1px;">REMOVER</span></button>
+                        </div>
+                        <div class="prod-preco">
+                            <p class="pvista">preço a vista:</p>
+                            <span class="price">{{this.preco}}</span>
+                        </div>
+                    </div>
+                {{/each}}
+            </section>
+        </div>
+        </div>
+        <div class="col2">
+            <div class="containerResumo">
+            <div class="tituloResumo">
+                
+                <h2 class="h2Center"><img src="/icons/bluepaper.png" class="iconsPedido"> RESUMO</h2>
+            </div>
+                <div class="preco-prods">
+                    <p>Valor dos produtos: </p>
+                    <span style="color:#42464D;">R$ <span style="color:#42464D;" id="precoTotal"></span></span>
+                </div>
+                <div class="frete">
+                    <p>Frete:</p>
+                    <span style="color:#42464D;">R$ <span style="color:#42464D;" id="precoFrete"></span></span>
+                </div>
+                <div class="preco-final-prazo">
+                    <p>Total a prazo: </p>
+                    <span style="color:#42464D;">R$ <span style="color:#42464D;" id="precoFinal"></span></span>
+                </div>
+                <div class="vezes10">
+                        <p style="color:#42464D;">(em até 10x de R$ <span id="precoFinal10x" style="color:#42464D; font-size:15px; font-weight:bold;"></span> sem juros)</p>
+                    </div>
+            <div class="preco-final-pix">
+                <span style="font-size: 12px;">Valor a vista no <b>pix:</b></span>
+                <p style="font-size: 30px; font-weight: bold; color:rgb(31, 144, 80);">R$ <span id="precoPix"></span></p>
+                <p style="font-size: 14px;color:rgb(31, 144, 80);">(Economize: <b>R$ <span id="desconto"></span></b>)</p>
+            </div>
+            <div class="btn-resumo">
+                <button class="continuar">CONTINUAR COMPRANDO</button>
+                <button type="submit" class="finalizar" onclick="enviarDados()">FINALIZAR A COMPRA</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+

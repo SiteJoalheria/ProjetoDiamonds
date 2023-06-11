@@ -1,0 +1,48 @@
+<main class="mainL">
+<div class="containerL">
+    <div class="titleL"> Cadastrar </div>
+    <div class="contentL">
+        <form action="/cadastro/add" method="POST">
+            <div class="user-detailsL">
+                <div class="input-boxL">
+                    <span class="details">Nome completo:</span>
+                    <input type="text" placeholder="Digite seu nome..." name="nome" required >
+                </div>
+                <div class="input-boxL">
+                    <span class="details">CPF: </span>
+                    <input type="text" placeholder="000.000.000-00" name="cpf"  required maxlength="14" onkeypress="formatar('###.###.###-##', this)">                                                
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Telefone: </span>
+                    <input type="text" placeholder="(00)00000.0000" name="telefone"  required maxlength="13" onkeypress="formatar('## #####-####', this)">
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Cidade</span>
+                    <input type="text" placeholder="Digite a cidade..." name="cidade" required>
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Endereço: </span>
+                    <input type="text" placeholder="Digite o endereço..." name="endereco" required>
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Cep</span>
+                    <input type="text" placeholder="00000-000" name="cep" required maxlength="9" onkeypress="formatar('#####-###', this)">
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Email: </span>
+                    <input type="text" placeholder="seuemail@seudominio.com.br" name="email" required>
+                </div>
+                <div class="input-boxL">
+                    <span class="details">Senha: </span>
+                    <input type="text" placeholder="Digite a senha..." name="senha" required>
+                </div>
+            </div>
+            <div class="buttonL">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+</div>
+</main>
+
+

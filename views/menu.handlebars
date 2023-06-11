@@ -1,0 +1,47 @@
+<!-- Slider Images -->
+<div>
+    <div class="slider">
+        <a href="#"><img id="img-1" src="/imagens/Slider/SliderImage1.png" alt="Image 1"/></a>
+        <a href="#"><img id="img-2" src="/imagens/Slider/SliderImage2.png" alt="Image 2"/></a>
+        <a href="#"><img id="img-3" src="/imagens/Slider/SliderImage3.png" alt="Image 3"/></a>
+    </div>
+    <button class="carousel-prev"><</button>
+    <button class="carousel-next">></button>
+</div>
+
+<div class="navigation-button">
+    <span class="dot active" onclick="changeSlide(0)"></span>
+    <span class="dot" onclick="changeSlide(1)"></span>
+    <span class="dot" onclick="changeSlide(2)"></span>
+</div>
+<!-- Fotos do site mavejoalheria -->
+
+
+<!-- Shop -->
+<main>
+{{#each categorias}}
+    <section id="{{@key}}" class="shop container sec-prod-menu">
+        <h2 class="section-title">{{@key}}</h2>
+        <div class="shop-content">
+            {{#each this}}
+                <div class="product-box">
+                    <div class="containerImg">
+                        <img src="{{imagem}}" alt="" class="product-img">
+                    </div>
+                    <div class="containerTitle">
+                        <h2 class="product-title">{{nome}}</h2>
+                        <span class="product-id">{{id}}</span>
+                    </div>
+                    <div class="priceblock">
+                        <span class="price">R$ {{preco}},00</span>
+                        <span class="priceX">ou 10x de {{formatNumber (divide preco 10)}}0</span>
+                    </div>
+                    <div class="containerShop add-cart">
+                        COMPRAR
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </section>
+{{/each}}
+</main>

@@ -1,0 +1,41 @@
+<main class="mainForn">
+    <div class="titleH">
+        <h2>Lista de Clientes</h2>
+    </div>
+    <div class="containerForn">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                    <th>Endereco</th>
+                    <th>Cidade</th>
+                    <th>Cep</th>
+                    <th>Email</th>
+                    <th>Senha</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each cliente}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{nome}}</td>
+                    <td>{{cpf}}</td>
+                    <td>{{telefone}}</td>
+                    <td>{{endereco}}</td>
+                    <td>{{cidade}}</td>
+                    <td>{{cep}}</td>
+                    <td>{{email}}</td>
+                    <td>{{senha}}</td>
+                    <td><a href="/admin/editarcliente/{{id}}" >Editar</a></td>
+                    <td><a href="/admin/excluircliente/{{id}}" >Excluir</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</main>
