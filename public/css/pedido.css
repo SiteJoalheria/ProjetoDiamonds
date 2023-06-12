@@ -7,19 +7,12 @@
 .containerGrid {
     display: grid;
     grid-template-columns: 0.9fr auto;
-<<<<<<< HEAD
     gap: 40px;
     padding: 60px 100px;
-=======
-    gap: 30px;
-    padding: 20px 60px;
-    margin: 0 auto;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     background-color: #f2f3f4;
     /* #f2f3f4 */
 }
 
-<<<<<<< HEAD
 .iconsPedido {
     width: 25px;
     height: 25px;
@@ -31,8 +24,6 @@
     align-items: center;
 }
 
-=======
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 .col1 {
     grid-row: span 2;
 }
@@ -60,11 +51,7 @@
     position: relative;
 }
 
-<<<<<<< HEAD
 /* .containerEndereco  .tituloEndereco::before{
-=======
-.containerEndereco  .tituloEndereco::before{
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     content: "";
     position: absolute;
     left: 10;
@@ -74,11 +61,7 @@
     border-radius: 5px;
     background: rgb(9,11,28);
     background: linear-gradient(270deg, rgba(9,11,28,1) 0%, rgba(2,168,201,1) 100%);
-<<<<<<< HEAD
 } */
-=======
-}
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 
 .tituloEndereco h2 {
     font-size: 20px;
@@ -90,11 +73,7 @@
     display: flex;
     height: 120px;
     flex-direction: column;
-<<<<<<< HEAD
     margin: 1rem 0 0 1rem;
-=======
-    margin-top: 1rem;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     padding: 10px;
     border-left: 4px solid #02a7c8;
     border-radius: 0.25rem;
@@ -102,15 +81,10 @@
 }
 
 .endereco p {
-<<<<<<< HEAD
     font-size: 14px;
     color: #7F858D;
     height: 25px;
     margin-left: 15px;
-=======
-    font-size: 16px;
-    height: 25px;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 }
 
 .btns-endereco-container {
@@ -124,10 +98,6 @@
     border: none;
     background-color: rgb(250, 250, 251);
     font-size: 16px;
-<<<<<<< HEAD
-=======
-    padding:10px;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     margin-top: 5px;
     border-bottom: 2px solid white;
     transition: 0.3s;
@@ -184,11 +154,7 @@
 .contentProd {
     display: grid;
     align-items: center;
-<<<<<<< HEAD
     grid-template-columns: 20% 15% 30%  20% 15%;
-=======
-    grid-template-columns: 20% 45%  20% 15%;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     margin-bottom: 20px;
     font-size: 14px;
     border-bottom: 1px solid 	#E8E8E8;
@@ -205,7 +171,6 @@
     height: 100%;
 }
 
-<<<<<<< HEAD
 .prod-id {
     width: 100%;
     font-size: 16px;
@@ -213,8 +178,6 @@
     color: rgb(66, 70, 77);
 }
 
-=======
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 .prod-nome {
     width: 100%;
     font-size: 16px;
@@ -295,10 +258,7 @@
 
 .price {
     color: #02a7c8;
-<<<<<<< HEAD
     font-weight: bold;
-=======
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 }
 
 /*---------------------------------- RESUMO ----------------------------------*/
@@ -317,10 +277,7 @@
     font-size: 20px;
     font-weight: bold;
     color: rgb(66, 70, 77);
-<<<<<<< HEAD
     
-=======
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 }
 
 .containerResumo p {
@@ -331,42 +288,27 @@
 .preco-prods {
     margin-top: 20px;
     width: 100%;
-<<<<<<< HEAD
     height: 45px;
-=======
-    height: 30px;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid #E8E8E8;
-<<<<<<< HEAD
     align-items: center;
-=======
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 }
 
 .frete {
     margin-top: 10px;
     width: 100%;
-<<<<<<< HEAD
     height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-=======
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 }
 
 .preco-final-prazo {
     margin-top: 10px;
     width: 100%;
-<<<<<<< HEAD
     height: 45px;
     display: flex;
     flex-direction: row;
@@ -380,12 +322,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-=======
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 }
 
 .preco-final-pix {
@@ -406,20 +342,10 @@
     width: 100%;
     height: 48px;
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
     align-items: center;
     border: 1px solid #02a7c8;
     background-color: #02a7c8;
-=======
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    border: 1px solid #02a7c8;
-    background-color: #02a7c8;
-    user-select: none;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 700;
@@ -428,31 +354,18 @@
     border-radius: 0.25rem;
 }
 
-<<<<<<< HEAD
 .finalizar:hover {
     cursor: pointer;
 }
 
-=======
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 .continuar {
     width: 100%;
     height: 48px;
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
     align-items: center;
     border: 1px solid #02a7c8;
     background-color: rgb(255, 255, 255);
-=======
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    border: 1px solid #02a7c8;
-    background-color: rgb(255, 255, 255);
-    user-select: none;
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     color: #02a7c8;
     font-size: 18px;
     font-weight: 700;

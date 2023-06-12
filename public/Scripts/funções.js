@@ -1,15 +1,11 @@
-<<<<<<< HEAD
 const urlParams = new URLSearchParams(window.location.search);
 const precoFreteG = urlParams.get('precoFrete');
 
 
-=======
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 function voltarPagina() {
     history.back();
 }
 
-<<<<<<< HEAD
 function obterDataAtual() {
     const data = new Date();
     const ano = data.getFullYear();
@@ -18,15 +14,6 @@ function obterDataAtual() {
     
     const dataFormatada = `${ano}-${mes}-${dia}`;
     return dataFormatada;
-=======
-// Função para exibir a janela de erro
-function exibirErro() {
-Swal.fire({
-    icon: 'error',
-    title: 'Erro!',
-    text: 'Ocorreu um erro. Tente novamente mais tarde.',
-});
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 }
 
 //Obtem o nome do usuario pelo cookie e salva em uma variavel para usar no header.
@@ -55,7 +42,6 @@ icons.forEach(icon => {
 });
 });
 
-<<<<<<< HEAD
 // --------------- CALCULAR VALOR TOTAL PARA O CONTAINER RESUMO ---------------
 function CalcularValorTotal() {
     var precoProds = document.querySelectorAll('.price');
@@ -351,5 +337,3 @@ function verificarPrecosExistem() {
             documento.value += texto.substring(0,1);
         }
     }
-=======
->>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
