@@ -8,7 +8,11 @@
 header {
     height: 110px;
     width: 100%;
+<<<<<<< HEAD
     background-color: 	#151946;
+=======
+    background-color: 	#090B1C;
+>>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
     overflow: hidden;
     display: flex;
@@ -36,7 +40,10 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+<<<<<<< HEAD
     justify-content: space-around;
+=======
+>>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     width: 30%;
 }
 
@@ -46,14 +53,20 @@ header {
 }
 
 .perfil {
+<<<<<<< HEAD
     width: 200px;
     height: 100%;
+=======
+    width: 150px;
+    height: 60px;
+>>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 0 20px;
 }
 
+<<<<<<< HEAD
 .perfilUP {
     width: 100%;
 }
@@ -77,6 +90,8 @@ header {
     font-weight: 400;
 }
 
+=======
+>>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 .nomeUsuario {
     color: white;
     font-size: 14px;
@@ -98,11 +113,16 @@ header {
 
 .itemPintado {
     padding: 0 20px;
+<<<<<<< HEAD
     
+=======
+    border-bottom: 3px solid #090B1C;
+>>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
     transition: transform 0.3s;
 }
 
 .itemPintado.active {
+<<<<<<< HEAD
     border-bottom: 3px solid #12cccc;
     transform: scale(1.05);
 }
@@ -116,6 +136,12 @@ header {
 
 }
 
+=======
+    border-bottom: 3px solid #02a7c8;
+    transform: scale(1.05);
+}
+
+>>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 .navItem{
     display: flex;
     flex-direction: column;
@@ -127,12 +153,15 @@ ul li img {
     margin-top: 5px;
 }
 
+<<<<<<< HEAD
 .img-icon-logo {
     width: 90px;
     height: 80px;
 }
 
 
+=======
+>>>>>>> d497055adb0c99e32b6c2f5ae32be0811dd1e426
 .img-icon {
     width: 30px;
     height: 30px;
